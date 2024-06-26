@@ -98,7 +98,7 @@ router.delete("/deletebooking/:id", async (req, res) => {
 });
 
 //get all bookings for car by booking id
-router.get("/getallbookings/:id", async (req, res) => {
+router.get("/getcarbookings/:id", async (req, res) => {
   try {
     const carID = req.params.id;
     const bookings = await Booking.find({ car: carID });
